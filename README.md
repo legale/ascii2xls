@@ -17,13 +17,13 @@ Argument 2 is optional. Default destination format is `xlsx`. If you need
 ### Simple
 Run: 
 ```
-./ascii2xls text2.txt
+./ascii2xls.py text2.txt
 ```
 to convert pseudo table in `text2.txt` to `xlsx` format to `text2.txt.xlsx`
 
 ### To csv
 Run: 
 ```
-./ascii2xls text2.txt text2.csv
+./ascii2xls.py text2.txt text2.csv
 ```
 to convert pseudo table in `text2.txt` to `csv` format to `text2.csv`
