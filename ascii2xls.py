@@ -47,6 +47,9 @@ text = text\
 	
 table, spans, use_headers = dt.grid2data(text)
 frame = pd.DataFrame(table[1:], columns=table[0])
-frame.to_excel(dst, index=False)
+if dst[-4:] == ".csv":
+	frame.to_csv(dst, index=False)
+else:
+	frame.to_excel(dst, index=False)
 
 
